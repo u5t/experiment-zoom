@@ -6,6 +6,10 @@ $background: '#fefefe'
 
 version: 8
 name: $name
+zoom: 7.21
+center:
+  - 133.073
+  - 33.64
 sources:
   oceanus:
     type: vector
