@@ -4030,7 +4030,520 @@
       }
     },
     {
+      "id": "poi-food-shopping",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 17,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "in",
+          "class",
+          "bar",
+          "bbq",
+          "beer",
+          "cafe",
+          "confectionery",
+          "drinking-water",
+          "fast-food",
+          "ice-cream",
+          "restaurant",
+          "restaurant-noodle",
+          "restaurant-pizza",
+          "restaurant-seafood",
+          "sushi",
+          "teahouse"
+        ],
+        [
+          "!=",
+          "disputed",
+          "japan_northern_territories"
+        ]
+      ],
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-JP"
+            ]
+          ],
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              ""
+            ]
+          ],
+          [
+            "image",
+            "circle"
+          ]
+        ],
+        "text-field": "{name}",
+        "text-offset": [
+          0,
+          0.3
+        ],
+        "text-size": 12,
+        "text-max-width": 9,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "poi-service",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "in",
+          "class",
+          "bank",
+          "bank-JP",
+          "car-repair",
+          "charging-station",
+          "fitness-centre",
+          "fuel",
+          "hairdresser",
+          "hardware",
+          "laundry",
+          "lodging",
+          "logging",
+          "optician",
+          "paint",
+          "parking",
+          "parking-garage"
+        ],
+        [
+          "!=",
+          "disputed",
+          "japan_northern_territories"
+        ]
+      ],
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-JP"
+            ]
+          ],
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              ""
+            ]
+          ],
+          [
+            "image",
+            "circle"
+          ]
+        ],
+        "text-field": "{name}",
+        "text-offset": [
+          0,
+          0.3
+        ],
+        "text-size": 12,
+        "text-max-width": 9,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "poi-health",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "in",
+          "class",
+          "blood-bank",
+          "defibrillator",
+          "dentist",
+          "doctor",
+          "emergency-phone",
+          "fire-station",
+          "fire-station-JP",
+          "hospital",
+          "hospital-JP",
+          "pharmacy",
+          "shelter",
+          "veterinary"
+        ],
+        [
+          "!=",
+          "disputed",
+          "japan_northern_territories"
+        ]
+      ],
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-JP"
+            ]
+          ],
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              ""
+            ]
+          ],
+          [
+            "image",
+            "circle"
+          ]
+        ],
+        "text-field": "{name}",
+        "text-offset": [
+          0,
+          0.3
+        ],
+        "text-size": 12,
+        "text-max-width": 9,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "poi-entertainment",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "in",
+          "class",
+          "america-football",
+          "american-football",
+          "amusement-park",
+          "aquarium",
+          "art-gallery",
+          "attraction",
+          "baseball",
+          "basketball",
+          "bowling-alley",
+          "campsite",
+          "casino",
+          "castle",
+          "castle-JP",
+          "cinema",
+          "cricket",
+          "golf",
+          "karaoke",
+          "landmark",
+          "landmark-JP",
+          "lighthouse",
+          "monument",
+          "museum",
+          "music",
+          "pitch",
+          "scooter",
+          "skateboard",
+          "skiing",
+          "snowmobile",
+          "soccer",
+          "stadium",
+          "swimming",
+          "table-tennis",
+          "tennis",
+          "theatre",
+          "volleyball"
+        ],
+        [
+          "!=",
+          "disputed",
+          "japan_northern_territories"
+        ]
+      ],
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-JP"
+            ]
+          ],
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              ""
+            ]
+          ],
+          [
+            "image",
+            "circle"
+          ]
+        ],
+        "text-field": "{name}",
+        "text-offset": [
+          0,
+          0.3
+        ],
+        "text-size": 12,
+        "text-max-width": 9,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
       "id": "poi-transport",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "has",
+          "name"
+        ],
+        [
+          "in",
+          "class",
+          "buddhism",
+          "cemetery",
+          "cemetery-JP",
+          "college",
+          "college-JP",
+          "embassy",
+          "library",
+          "place-of-worship",
+          "police",
+          "police-JP",
+          "post",
+          "post-JP",
+          "prison",
+          "ranger-station",
+          "religious-buddhist",
+          "religious-christian",
+          "religious-jewish",
+          "religious-muslim",
+          "religious-shinto",
+          "school",
+          "school-JP",
+          "telephone",
+          "toilet",
+          "town-hall",
+          "waste-basket",
+          "beach",
+          "dog-park",
+          "farm",
+          "garden",
+          "garden-center",
+          "garden-centre",
+          "horse-riding",
+          "mountain",
+          "natural",
+          "park",
+          "park-alt1",
+          "picnic-site",
+          "playground",
+          "volcano",
+          "waterfall",
+          "wetland",
+          "zoo"
+        ],
+        [
+          "!=",
+          "disputed",
+          "japan_northern_territories"
+        ]
+      ],
+      "layout": {
+        "text-padding": 2,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-JP"
+            ]
+          ],
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              ""
+            ]
+          ],
+          [
+            "image",
+            "circle"
+          ]
+        ],
+        "text-field": "{name}",
+        "text-offset": [
+          0,
+          0.3
+        ],
+        "text-size": 12,
+        "text-max-width": 9,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "poi-outdoor-civil",
       "type": "symbol",
       "source": "geolonia",
       "source-layer": "poi",

@@ -1,8 +1,8 @@
-id: poi-outdoor-civil
+id: poi-food-shopping
 type: symbol
 source: geolonia
 source-layer: poi
-minzoom: 9
+minzoom: 17
 filter:
   - all
   - - '=='
@@ -12,30 +12,20 @@ filter:
     - name
   - - in
     - class
-    - 'aerialway'
-    - 'airfield'
-    - 'airport'
-    - 'barrier'
-    - 'bicycle'
-    - 'bicycle-share'
-    - 'bridge'
-    - 'bus'
-    - 'bus-JP'
-    - 'car'
-    - 'car-rental'
-    - 'entrance'
-    - 'entrance-alt1'
-    - 'ferry'
-    - 'harbor'
-    - 'heliport'
-    - 'rail'
-    - 'rail-light'
-    - 'rail-metro'
-    - 'railway'
-    - 'railway-light'
-    - 'railway-metro'
-    - 'roadblock'
-    - 'rocket'
+    - 'bar'
+    - 'bbq'
+    - 'beer'
+    - 'cafe'
+    - 'confectionery'
+    - 'drinking-water'
+    - 'fast-food'
+    - 'ice-cream'
+    - 'restaurant'
+    - 'restaurant-noodle'
+    - 'restaurant-pizza'
+    - 'restaurant-seafood'
+    - 'sushi'
+    - 'teahouse'
   - - '!='
     - disputed
     - japan_northern_territories
