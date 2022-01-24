@@ -1,6 +1,11 @@
 {
   "version": 8,
   "name": "Geolonia Basic",
+  "zoom": 7.21,
+  "center": [
+    133.073,
+    33.64
+  ],
   "sources": {
     "oceanus": {
       "type": "vector",
