@@ -13,7 +13,7 @@
     "geolonia": {
       "type": "vector",
       "minzoom": 8,
-      "url": "https://tileserver.geolonia.com/v2/tiles.json?key=YOUR-API-KEY"
+      "url": "https://tileserver.geolonia.com/shikoku-zoom-test/tiles.json?key=YOUR-API-KEY"
     }
   },
   "sprite": "https://geoloniamaps.github.io/basic/basic",
@@ -4030,11 +4030,11 @@
       }
     },
     {
-      "id": "poi-r25",
+      "id": "poi-transport",
       "type": "symbol",
       "source": "geolonia",
       "source-layer": "poi",
-      "minzoom": 16,
+      "minzoom": 9,
       "filter": [
         "all",
         [
@@ -4043,177 +4043,36 @@
           "Point"
         ],
         [
-          ">=",
-          "rank",
-          25
-        ],
-        [
           "has",
           "name"
         ],
         [
-          "!=",
-          "disputed",
-          "japan_northern_territories"
-        ]
-      ],
-      "layout": {
-        "text-padding": 2,
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-anchor": "top",
-        "icon-anchor": "bottom",
-        "icon-image": [
-          "coalesce",
-          [
-            "image",
-            [
-              "concat",
-              [
-                "get",
-                "class"
-              ],
-              "-JP"
-            ]
-          ],
-          [
-            "image",
-            [
-              "concat",
-              [
-                "get",
-                "class"
-              ],
-              ""
-            ]
-          ],
-          [
-            "image",
-            "circle"
-          ]
-        ],
-        "text-field": "{name}",
-        "text-offset": [
-          0,
-          0.3
-        ],
-        "text-size": 12,
-        "text-max-width": 9
-      },
-      "paint": {
-        "text-halo-blur": 0.5,
-        "text-color": "#666",
-        "text-halo-width": 1,
-        "text-halo-color": "#ffffff"
-      }
-    },
-    {
-      "id": "poi-r10-r24",
-      "type": "symbol",
-      "source": "geolonia",
-      "source-layer": "poi",
-      "minzoom": 13,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "<",
-          "rank",
-          25
-        ],
-        [
-          "has",
-          "name"
-        ],
-        [
-          "!=",
-          "disputed",
-          "japan_northern_territories"
-        ],
-        [
-          ">=",
-          "rank",
-          10
-        ]
-      ],
-      "layout": {
-        "text-padding": 2,
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-anchor": "top",
-        "icon-anchor": "bottom",
-        "icon-image": [
-          "coalesce",
-          [
-            "image",
-            [
-              "concat",
-              [
-                "get",
-                "class"
-              ],
-              "-JP"
-            ]
-          ],
-          [
-            "image",
-            [
-              "concat",
-              [
-                "get",
-                "class"
-              ],
-              ""
-            ]
-          ],
-          [
-            "image",
-            "circle"
-          ]
-        ],
-        "text-field": "{name}",
-        "text-offset": [
-          0,
-          0.3
-        ],
-        "text-size": 12,
-        "text-max-width": 9,
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-halo-blur": 0.5,
-        "text-color": "#666",
-        "text-halo-width": 1,
-        "text-halo-color": "#ffffff"
-      }
-    },
-    {
-      "id": "poi-r0-r9",
-      "type": "symbol",
-      "source": "geolonia",
-      "source-layer": "poi",
-      "minzoom": 13,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "<",
-          "rank",
-          9
-        ],
-        [
-          "has",
-          "name"
+          "in",
+          "class",
+          "aerialway",
+          "airfield",
+          "airport",
+          "barrier",
+          "bicycle",
+          "bicycle-share",
+          "bridge",
+          "bus",
+          "bus-JP",
+          "car",
+          "car-rental",
+          "entrance",
+          "entrance-alt1",
+          "ferry",
+          "harbor",
+          "heliport",
+          "rail",
+          "rail-light",
+          "rail-metro",
+          "railway",
+          "railway-light",
+          "railway-metro",
+          "roadblock",
+          "rocket"
         ],
         [
           "!=",
