@@ -1,0 +1,91 @@
+id: poi-transport
+type: symbol
+source: geolonia
+source-layer: poi
+minzoom: 11
+filter:
+  - all
+  - - '=='
+    - $type
+    - Point
+  - - has
+    - name
+  - - in
+    - class
+    - 'buddhism'
+    - 'cemetery'
+    - 'cemetery-JP'
+    - 'college'
+    - 'college-JP'
+    - 'embassy'
+    - 'library'
+    - 'place-of-worship'
+    - 'police'
+    - 'police-JP'
+    - 'post'
+    - 'post-JP'
+    - 'prison'
+    - 'ranger-station'
+    - 'religious-buddhist'
+    - 'religious-christian'
+    - 'religious-jewish'
+    - 'religious-muslim'
+    - 'religious-shinto'
+    - 'school'
+    - 'school-JP'
+    - 'telephone'
+    - 'toilet'
+    - 'town-hall'
+    - 'waste-basket'
+    - 'beach'
+    - 'dog-park'
+    - 'farm'
+    - 'garden'
+    - 'garden-center'
+    - 'garden-centre'
+    - 'horse-riding'
+    - 'mountain'
+    - 'natural'
+    - 'park'
+    - 'park-alt1'
+    - 'picnic-site'
+    - 'playground'
+    - 'volcano'
+    - 'waterfall'
+    - 'wetland'
+    - 'zoo'
+  - - '!='
+    - disputed
+    - japan_northern_territories
+layout:
+  text-padding: 2
+  text-font:
+    - Noto Sans Regular
+  text-anchor: top
+  icon-anchor: bottom
+  icon-image:
+    - coalesce
+    - - image
+      - - concat
+        - - get
+          - class
+        - '-JP'
+    - - image
+      - - concat
+        - - get
+          - class
+        - ''
+    - - image
+      - circle
+  text-field: '{name}'
+  text-offset:
+    - 0
+    - 0.3
+  text-size: 12
+  text-max-width: 9
+  visibility: visible
+paint:
+  text-halo-blur: 0.5
+  text-color: '#666'
+  text-halo-width: 1
+  text-halo-color: '#ffffff'

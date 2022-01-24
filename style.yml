@@ -121,6 +121,11 @@ layers:
   - !!inc/file layers/water-name-other.yml
   - !!inc/file layers/building.yml
   - !!inc/file layers/building-3d.yml
+  - !!inc/file layers/poi-food-shopping.yml
+  - !!inc/file layers/poi-service.yml
+  - !!inc/file layers/poi-health.yml
+  - !!inc/file layers/poi-entertainment.yml
+  - !!inc/file layers/poi-outdoor-civil.yml
   - !!inc/file layers/poi-transport.yml
   - !!inc/file layers/poi-railway.yml
   - !!inc/file layers/railway-name.yml
