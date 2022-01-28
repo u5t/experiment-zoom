@@ -26,6 +26,10 @@ filter:
     - 'restaurant-seafood'
     - 'sushi'
     - 'teahouse'
+  - - in
+    - class
+    - 'bus'
+    - 'bus-JP'
   - - '!='
     - disputed
     - japan_northern_territories
