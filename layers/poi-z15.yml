@@ -1,8 +1,8 @@
-id: poi-transport
+id: poi-z15
 type: symbol
 source: geolonia
 source-layer: poi
-minzoom: 8
+minzoom: 15
 filter:
   - all
   - - '=='
@@ -12,25 +12,7 @@ filter:
     - name
   - - in
     - class
-    - 'barrier'
-    # - 'bicycle'
-    # - 'bicycle-share'
-    - 'bridge'
-    # - 'car'
-    # - 'car-rental'
-    - 'entrance'
-    - 'entrance-alt1'
-    - 'ferry'
-    - 'harbor'
-    - 'heliport'
-    - 'rail'
-    - 'rail-light'
-    - 'rail-metro'
-    - 'railway'
-    - 'railway-light'
-    - 'railway-metro'
-    - 'roadblock'
-    - 'rocket'
+    - ''
   - - '!='
     - disputed
     - japan_northern_territories
