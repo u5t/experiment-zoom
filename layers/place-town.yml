@@ -2,7 +2,7 @@ id: place-town
 type: symbol
 source: geolonia
 source-layer: place
-minzoom: 8.5
+minzoom: 10
 filter:
   - all
   - - '=='
