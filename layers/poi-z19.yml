@@ -12,7 +12,8 @@ filter:
     - name
   - - in
     - class
-    - ''
+    - 'entrance'
+    - 'entrance-alt1'
   - - '!='
     - disputed
     - japan_northern_territories
