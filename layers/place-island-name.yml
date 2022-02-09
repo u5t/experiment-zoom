@@ -29,6 +29,6 @@ layout:
   text-max-width: 8
   visibility: visible
 paint:
-  text-color: "red"
+  text-color: rgba(102, 102, 102, 1)
   text-halo-width: 1.2
   text-halo-color: rgba(255,255,255,0.8)

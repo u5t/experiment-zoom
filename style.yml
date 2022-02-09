@@ -22,6 +22,11 @@ sources:
     minzoom: 8
     url: https://tileserver.geolonia.com/japan-zoom-test/tiles.json?key=YOUR-API-KEY
     # url: https://tileserver.geolonia.com/v2/tiles.json?key=YOUR-API-KEY
+    attribution: <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">© GSI Japan</a>
+  dem:
+    type: raster-dem
+    tiles:
+    - https://tileserver.geolonia.com/gsi-dem/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY
 sprite: https://geoloniamaps.github.io/basic/basic
 glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
 layers:
@@ -34,6 +39,7 @@ layers:
   - !!inc/file layers/oc-ocean.yml
   - !!inc/file layers/oc-glacier.yml
   - !!inc/file layers/oc-forest.yml
+  - !!inc/file layers/hillshading.yml
   - !!inc/file layers/oc-waterway-river-ja.yml
   - !!inc/file layers/oc-waterway-river.yml
   - !!inc/file layers/oc-waterway-name-ja.yml
