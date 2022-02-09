@@ -4545,10 +4545,6 @@
           "class",
           "barrier",
           "bridge",
-          "entrance",
-          "entrance-alt1",
-          "ferry",
-          "harbor",
           "heliport",
           "rail",
           "rail-light",
@@ -4957,7 +4953,8 @@
         [
           "in",
           "class",
-          ""
+          "ferry",
+          "harbor"
         ],
         [
           "!=",
@@ -5517,7 +5514,8 @@
         [
           "in",
           "class",
-          ""
+          "entrance",
+          "entrance-alt1"
         ],
         [
           "!=",
@@ -6371,7 +6369,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "rgba(102, 102, 102, 1)",
+        "text-color": "red",
         "text-halo-width": 1.2,
         "text-halo-color": "rgba(255,255,255,0.8)"
       }

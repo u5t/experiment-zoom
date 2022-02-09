@@ -12,7 +12,8 @@ filter:
     - name
   - - in
     - class
-    - ''
+    - 'ferry'
+    - 'harbor'
   - - '!='
     - disputed
     - japan_northern_territories
