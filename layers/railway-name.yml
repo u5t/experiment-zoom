@@ -2,7 +2,7 @@ id: railway-name
 type: symbol
 source: geolonia
 source-layer: transportation_name
-minzoom: 10
+minzoom: 8
 filter:
   - all
   - - '=='
