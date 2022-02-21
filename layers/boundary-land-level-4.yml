@@ -12,7 +12,7 @@ filter:
 layout:
   line-join: round
 paint:
-  line-color: '#ff0000'
+  line-color: '#ED5A5A'
   line-dasharray:
     - 3
     - 1
@@ -26,4 +26,6 @@ paint:
       - - 5
         - 1
       - - 12
-        - 2
+        - 2.5
+  line-opacity: 0.8
+
